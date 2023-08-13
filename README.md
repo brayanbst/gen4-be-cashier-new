@@ -47,7 +47,7 @@ $ npm run test:cov
 ## Stay in touch
 
 - Author - [Neiser Custodio](https://instagram.com/neisercode)
-- Youtube - [https://www.youtube.com/@neisercp](https://youtube.com/neisercp)
+- Youtube - [https://www.youtube.com/@neisercp](https://youtube.com/@neisercp)
 - Twitter - [@neisercp](https://twitter.com/neisercp)
 - Instagram - [@neisercode](https://instagram.com/neisercode)
 
