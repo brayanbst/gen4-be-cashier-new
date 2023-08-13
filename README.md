@@ -8,6 +8,13 @@
   <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
 
 
+## Contact
+
+- Author - [Neiser Custodio](https://instagram.com/neisercode)
+- Youtube - [https://www.youtube.com/@neisercp](https://youtube.com/@neisercp)
+- Twitter - [@neisercp](https://twitter.com/neisercp)
+- Instagram - [@neisercode](https://instagram.com/neisercode)
+
 ## Description
 
 
@@ -43,14 +50,6 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-
-## Stay in touch
-
-- Author - [Neiser Custodio](https://instagram.com/neisercode)
-- Youtube - [https://www.youtube.com/@neisercp](https://youtube.com/@neisercp)
-- Twitter - [@neisercp](https://twitter.com/neisercp)
-- Instagram - [@neisercode](https://instagram.com/neisercode)
-
 ## License
 
-Nest is [MIT licensed](LICENSE).
+By [Neiser Custodio](https://instagram.com/neisercode).
