@@ -7,11 +7,11 @@ export class TypeormService implements TypeOrmOptionsFactory {
     createTypeOrmOptions(): TypeOrmModuleOptions | Promise<TypeOrmModuleOptions> {
         return {
             type: 'mssql',
-            host: 'SQL5106.site4now.net',
-            username: 'db_a7224e_movies_admin',
-            password: 'Movies26#',
-            port: 1433,
-            database: 'db_a7224e_movies',
+            host: process.env.DATABASE_HOST,
+            username: process.env.DATABASE_USERNAME,
+            password: process.env.DATABASE_PASSWORD,
+            port: JSON.parse(process.env.DATABASE_PORT),
+            database: process.env.DATABASE_NAME,
             entities: ['dist/**/*.model.{ts,js}']
         }
     }
