@@ -1,8 +1,21 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 
-async function bootstrap() {
+export async function azureFunction(context, req) {
   const app = await NestFactory.create(AppModule);
   app.enableCors();
-  await app.init();
+
+  const result = await app.getHttpAdapter().getInstance().handleHttp({
+    headers: req.headers,
+    method: req.method,
+    url: req.originalUrl,
+    body: req.rawBody,
+  });
+
+  context.res = {
+    status: result.getStatus(),
+    body: result.getResponse(),
+    headers: result.getHeaders(),
+  };
 }
+
