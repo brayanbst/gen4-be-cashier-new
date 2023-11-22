@@ -29,7 +29,6 @@ package:
     - .env 
     - serverless.yml
     - package.json
-    - node_modules/**
   exclude:
     - .git/**
     - .gitignore
