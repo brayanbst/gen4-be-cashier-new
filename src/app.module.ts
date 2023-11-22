@@ -1,18 +1,25 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+
 import { TypeormService } from './services/typeorm/typeorm.service';
-import { MovieService } from './services/movie/movie.service';
+import { CardService } from './services/card/card.service';
+import { TransactionService } from './services/transaction/transaction.service';
+
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Movies } from './models/movies.model';
-import { MovieController } from './controller/movie/movie.controller';
+
+import { Card } from './models/card.model';
+import { Transactions } from './models/transaction.model';
+
+import { CardController } from './controller/card/card.controller';
+import { TransactionsController } from './controller/transaction/transaction.controller';
 
 @Module({
-  controllers: [AppController, MovieController],
+  controllers: [AppController, TransactionsController, CardController],
   imports: [
     TypeOrmModule.forRootAsync({useClass: TypeormService}),
-    TypeOrmModule.forFeature([Movies])
+    TypeOrmModule.forFeature([Transactions, Card])
   ],
-  providers: [AppService, TypeormService, MovieService],
+  providers: [AppService, TypeormService, TransactionService, CardService],
 })
 export class AppModule {}

@@ -7,12 +7,18 @@ export class TypeormService implements TypeOrmOptionsFactory {
     createTypeOrmOptions(): TypeOrmModuleOptions | Promise<TypeOrmModuleOptions> {
         return {
             type: 'mssql',
-            host: process.env.DATABASE_HOST,
-            username: process.env.DATABASE_USERNAME,
-            password: process.env.DATABASE_PASSWORD,
-            port: JSON.parse(process.env.DATABASE_PORT),
-            database: process.env.DATABASE_NAME,
-            entities: ['dist/**/*.model.{ts,js}']
+            host: 'DESKTOP-JEV966A\\SQLEXPRESS',
+            username: 'nestjs',
+            password: '123',
+            port: 1433,
+            database:  'transactions-ms-db',
+            entities: ['dist/**/*.model.{ts,js}'],
+            synchronize: false,
+            autoLoadEntities: true,
+            options: {
+            encrypt: true,
+            trustServerCertificate: true
+            }
         }
     }
 

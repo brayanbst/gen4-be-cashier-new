@@ -1,52 +1,26 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Nombre del Proyecto
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Breve descripción del proyecto: qué hace, para qué se utiliza, y cualquier otra información relevante.
 
-  <p align="center">Microservicio crud de peliculas desarrollado en NestJS con base datos SQL Server</p>
+## Comenzando
 
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local con fines de desarrollo y pruebas.
 
-## Contact
+### Pre-requisitos
 
-- Author - [Neiser Custodio](https://instagram.com/neisercode)
-- Youtube - [https://www.youtube.com/@neisercp](https://youtube.com/@neisercp)
-- Twitter - [@neisercp](https://twitter.com/neisercp)
-- Instagram - [@neisercode](https://instagram.com/neisercode)
+Qué cosas necesitas para instalar el software y cómo instalarlas.
 
-## Installation
+- Node.js (v18.16.0)
+- SQL Server Express
 
-```bash
-$ npm install
-```
+### Instalación
 
-## Running the app
+Una serie de ejemplos paso a paso que te indican cómo hacer funcionar un entorno de desarrollo.
+- npm install
+1. Clona el repositorio: 
 
-```bash
-# development
-$ npm run start
+### Ejecutar proyecto
 
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## License
-
-By [Neiser Custodio](https://instagram.com/neisercode).
+Una serie de ejemplos paso a paso que te indican cómo hacer funcionar un entorno de desarrollo.
+- npm run start
+- npm run build
