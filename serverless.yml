@@ -1,0 +1,36 @@
+service: AWS-STARTWARS
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  lambdaHashingVersion: 20201221
+  stage: ${opt:stage, 'dev'}
+  region: ${opt:region, 'us-west-2'}
+  apiGateway:
+    shouldStartNameWithService: true
+
+functions:
+  validateCardNumber:
+    handler: src/aws-lambda/cardValidation/index
+    events:
+      - http:
+          path: /validate-card-number
+          method: post
+custom:
+  documentation:
+    apiName: "AWS-STARWARS API"
+    apiDescription: "API para gestionar tarjetas de crédito"
+    version: "1.0.0"
+
+package:
+  include:
+    - .env 
+    - serverless.yml
+    - package.json
+    - node_modules/**
+  exclude:
+    - .git/**
+    - .gitignore
+    - README.md
