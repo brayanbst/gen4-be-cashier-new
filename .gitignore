@@ -2,8 +2,10 @@
 /dist
 
 .history
+/node_modules
 .env
 # Node
+.env
 npm-debug.log
 yarn-error.log
 # Logs
