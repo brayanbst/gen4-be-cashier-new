@@ -17,6 +17,9 @@ export class Transactions {
     @PrimaryGeneratedColumn()
     id: number;
 
+    @Column({ length: 50 })
+    transactionId: string;
+
     @ManyToOne(() => Card)
     @JoinColumn({ name: 'cardId' })
     card: Card;

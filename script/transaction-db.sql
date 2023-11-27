@@ -1,6 +1,6 @@
 CREATE TABLE transactions (
     id INT PRIMARY KEY IDENTITY(1,1),
-	transactionId INT NULL,
+	transactionId NVARCHAR(50) NULL,
     cardId INT,
     commerceId INT,
     transactionType NVARCHAR(50), -- 'CREDITO' o 'DEBITO'

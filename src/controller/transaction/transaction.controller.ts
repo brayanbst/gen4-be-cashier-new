@@ -162,7 +162,8 @@ export class TransactionsController {
         if (resultadoProcesamiento.success) {
             const response = await this.transactionsService.updateStatus(newTransaction.id);
             if (response) {
-                return { success: true, data: resultadoProcesamiento };
+                resultadoProcesamiento.details.transactionId = newTransaction.transactionId;
+                return { data: { ...resultadoProcesamiento } } ;
             }
         }
         return { success: false, data: resultadoProcesamiento };
